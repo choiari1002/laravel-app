@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Auth;
 
 class TestimonialRequest extends FormRequest
 {
@@ -16,7 +17,8 @@ class TestimonialRequest extends FormRequest
         if( Auth::check() ) {
             return true;
         }
-        return false;
+        // return false;
+        return true;
     }
 
     /**
