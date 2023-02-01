@@ -31,7 +31,7 @@ class TestimonialController extends Controller
     }
 
     // 저장
-    public function store(MentorRequest $request)
+    public function store(TestimonialRequest $request)
     {
         $request->merge([
             'order' => Testimonial::count() + 1,
@@ -41,7 +41,7 @@ class TestimonialController extends Controller
         $testimonials = Testimonial::create( $request->all() );
 
         if( isset($request->photo) ) {
-            $this->update_answers_for_questions($mentor, $request);
+            $this->update_answers_for_questions($testimonial, $request);
         }
 
         Session::flash('success', 'Successfully created');
