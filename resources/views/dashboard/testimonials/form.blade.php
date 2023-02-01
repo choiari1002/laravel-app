@@ -15,30 +15,9 @@
 </div>
 
 <div class="form-group">
-    <label class="col-sm-2 control-label">Company</label>
-    <div class="col-sm-10">
-        {!! Form:: text('company', null, ['class'=>'form-control']) !!}
-    </div>
-</div>
-
-<div class="form-group">
-    <label class="col-sm-2 control-label">Company Summary</label>
+    <label class="col-sm-2 control-label">Content</label>
     <div class="col-sm-10">
         {!! Form:: textarea('company_summary', null, ['class'=>'form-control']) !!}
-    </div>
-</div>
-
-<div class="form-group">
-    <label class="col-sm-2 control-label">Position</label>
-    <div class="col-sm-10">
-        {!! Form:: text('position', null, ['class'=>'form-control']) !!}
-    </div>
-</div>
-
-<div class="form-group">
-    <label class="col-sm-2 control-label">Mentorship Category</label>
-    <div class="col-sm-10">
-        {!! Form:: text('mentorship_category', null, ['class'=>'form-control']) !!}
     </div>
 </div>
 

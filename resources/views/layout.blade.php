@@ -41,7 +41,7 @@
                     <li><a href="/">Welcome</a></li>
                     <li><a href="/app/hello">Hello</a></li>
                     <li><a href="/app/customer">Customer</a></li>     
-                    <li><a href="/dashboard/testimonials/index">Testimonials</a></li>                    
+                    <li><a href="/dashboard/testimonials">Testimonials</a></li>                    
                 </ul>
                 @yield('content')
             </div>
