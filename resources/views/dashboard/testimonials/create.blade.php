@@ -13,7 +13,7 @@
         </div>
         <ol class="breadcrumb">
             <li><a href="#"><i class="demo-pli-home"></i></a></li>
-            <li><a href="{!! URL::to('dashboard/mentors') !!}">Testimonials</a></li>
+            <li><a href="{!! URL::to('dashboard/testimonials') !!}">Testimonials</a></li>
             <li class="active">Create</li>
         </ol>
     </div>

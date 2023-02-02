@@ -17,14 +17,14 @@
 <div class="form-group">
     <label class="col-sm-2 control-label">Content</label>
     <div class="col-sm-10">
-        {!! Form:: textarea('company_summary', null, ['class'=>'form-control']) !!}
+        {!! Form:: textarea('content', null, ['class'=>'form-control']) !!}
     </div>
 </div>
 
 <div class="form-group">
     <label class="col-sm-2 control-label">Thumbnail</label>
     <div class="col-sm-10">
-        <input name="photo" type="file" class="form-control">
+        <input name="thumbnail" type="file" class="form-control">
     </div>
 </div>
 {{-- @if( isset( $mentor->photo) && $mentor->photo !== '' )
