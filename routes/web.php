@@ -78,10 +78,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     // });
 // });
 
-// FIXME: 경로가 위처럼 잘 안 걸려서 아래처럼 일단 작성했습니다. 방법 물어보기!
-// Route::get('dashboard/testimonials/index', '\App\Http\Controllers\TestimonialController@index');
-// Route::get('dashboard/testipmonials/create', '\App\Http\Controllers\TestimonialController@create');
-
-// Route::resource('main', TestimonialController::class);
-
 Route::resource('dashboard/testimonials', TestimonialController::class);
