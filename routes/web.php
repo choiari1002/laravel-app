@@ -26,6 +26,8 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/projects', '\App\Http\Controllers\ProjectController@index');
+
 Route::get('/app/hello', '\App\Http\Controllers\HelloController@myTeam');
 Route::get('/app/customer', '\App\Http\Controllers\CustomersController@list');
 
