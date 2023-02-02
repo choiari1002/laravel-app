@@ -49,6 +49,7 @@ class TestimonialController extends Controller
     }
 
     // 수정(업데이트)
+    // FIXME: mentor 컨트롤러에서 가져온 함수 -> testimonial 의 내용만 수정해서 update 하고 싶은데 어떻게 가능한지?
     public function edit($slug)
     {
         $questions = $this->get_questions();

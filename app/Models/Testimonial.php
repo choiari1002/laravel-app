@@ -20,7 +20,7 @@ class Testimonial extends Model
         'is_active'
     ];
 
-    // 위의 아이만 가져왔는데 아래도 필요한지? 혹시 웹/관리자 각각 가져오는 건지?
+    // 위의 아이만 가져왔는데 아래도 필요한지? 혹시 웹/관리자 각각 가져오는 건지? -> edit 누르면 쓰는듯?
     // public function get_path()
     // {
     //     return "/mentors/{$this->slug}";
@@ -34,6 +34,11 @@ class Testimonial extends Model
     public function get_path()
     {
         return "/testimonials/{$this->slug}";
+    }
+
+    public function get_testimonial_path()
+    {
+        return "/dashboard/testimonials/{$this->slug}";
     }
 
     // 밑의 함수는 무슨 역할을 하는건지?
