@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Testimonial;
 use App\Http\Requests\TestimonialRequest;
+use Session;
 
 class TestimonialController extends Controller
 {
