@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>@yield('title', 'Laravel')</title>
+        <link rel="stylesheet" href="{{ mix('css/main.css') }}">
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -35,6 +36,10 @@
                     @endauth
                 </div>
             @endif
+
+            <div class="bg-red-800">
+                Hello
+            </div>
 
             <div>
                 <ul>
