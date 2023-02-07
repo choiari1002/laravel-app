@@ -36,6 +36,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Name</th>
+                                    <th>Content</th>
                                     <th>Active</th>
                                     <th>Edit</th>
                                 </tr>
@@ -45,6 +46,7 @@
                                     <tr>
                                         <td>{!! $testimonial->id !!}</td>
                                         <td>{!! $testimonial->name !!}</td>
+                                        <td>{!! strlen($testimonial->content) > 150 ? mb_substr($testimonial->content, 0, 149).'...' : $testimonial->content !!}</td>
                                         <td><p class="{!! $testimonial->is_active ? 'text-success' : 'text-danger' !!}">{!! $testimonial->is_active ? 'Active' : 'Inactive' !!}</td>
                                         <td><a href="{!! $testimonial->get_testimonial_path() . '/edit' !!}">Edit</a></td>
                                     </tr>
